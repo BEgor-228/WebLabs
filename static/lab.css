@@ -1,0 +1,24 @@
+.filter {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    display: none;
+    background-color: #eee;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+}
+.nav-list label {
+    margin-bottom: 10px;
+}
+.filter-button1 {
+    padding-inline: 10px;
+    padding-bottom: 2px;
+    border: none;
+    color: #333;
+}
+.filter-button1:hover + .nav-list, .nav-list:hover {
+    display: block;
+}

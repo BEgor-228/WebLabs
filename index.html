@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант1</title>
+    <link rel="stylesheet" href="static/lab.css">
+    <style>
+        html {
+            background-color: #FFFFFF;
+        }
+        header {
+            display: flex;
+            width: 1600px;
+            height: 44px;
+            border-bottom: 1px;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 14px;
+            padding-right: 160px;
+            padding-bottom: 14px;
+            padding-left: 160px;
+        }
+        .Frame1 {
+            display: flex;
+            gap: 80px;
+            width: 680px;
+            height: 38px;
+            align-items: center;
+            text-align: center;
+        }
+        .Brand {
+            display: flex;
+            width: 190px;
+            height: 34px;
+            gap: 16px;
+            text-align: center;
+        }
+        .Frame2 {
+            width: 400px;
+            height: 30px;
+            padding: 10px;
+        }
+        .Frame2 a {
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .ActionSelection {
+            display: flex;
+            height: 44px;
+            width: 96px;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main {
+            width: 1600px;
+            height: 632px;
+            padding-top: 30px;
+            padding-left: 160px;
+            gap: 16px;
+        }
+        .content {
+            display: grid;
+            padding-left: 24px;
+            padding-top: 22px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            width: 1600px;
+            width: 576px;
+        }
+        .card {
+            width: 400px;
+            height: 576px;
+            gap: 16px;
+        }
+        .card img {
+            display: block;
+            width: 352px;
+            height: 420px;
+            gap: 10px;
+        }
+        .card p {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .footer p{
+            width: 1920px;
+            height: 72px;
+        }
+        .filter-button1 {
+            text-align: left;
+            font-size: 16px;
+            background-color: #FFFFFF;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Frame1">
+            <div class="Brand">
+                <img src="img/Star.png" alt="Звезда">
+                <span style="font-size: 30px;">Вариант 1</span>
+            </div>
+            <div class="Frame2">
+                <a href="#">Верхняя одежда</a>
+                <a href="#">Брюки</a>
+                <a href="#">Аксессуары</a>
+            </div>
+        </div>
+        <div class="ActionSelection">
+            <a href="#"><img src="img/Профиль1.png" alt="Профиль" style="width: 25px; height: 25px;"></a>
+            <a href="#"><img src="img/Покупки1.png" alt="Покупки" style="width: 25px; height: 25px;"></a>
+        </div>
+    </header>
+    <main>
+        <div class="filter">
+            <div class="firstnav">
+                <button class="filter-button1"><img src="img/filter.png" alt="Filter"> Фильтр</button>
+                <div class="nav-list">
+                    <p><input type="checkbox" /> Acne Studios</p>
+                    <p><input type="checkbox" /> Ami Paris</p>
+                    <p><input type="checkbox" /> Dsquared2</p>
+                    <p><input type="checkbox" /> Stone Island</p>
+                </div>
+            </div>
+            <div class="secondnav">
+                <select name="choice">
+                    <option value="first">По умолчанию</option>
+                    <option value="second">Сначала досутпные</option>
+                    <option value="third">Сначала дорогие</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img src="img/stoneisland.png" alt="StoneIsland">
+                <p style="font-size: 22px;"><a href="https://www.ysl.com/"><b>30 000 руб</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.ysl.com/">Бренд <b>Stone Island</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.ysl.com/">Жилет с нашивкой компасом</a></p>
+            </div>
+            <div class="card">
+                <img src="img/amiparis.png" alt="АмиПариж">
+                <p style="font-size: 22px;"><a href="https://www.amiparis.com/"><b>18 800 руб</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.amiparis.com/">Бренд <b>Ami Paris</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.amiparis.com/">Полосатая рубашка с коротким рукавом</a></p>
+            </div>
+            <div class="card">
+                <img src="img/вквадрате.png" alt="Вквадрате2">
+                <p style="font-size: 22px;"><a href="https://www.dolcegabbana.com/"><b>47 300 руб</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.dolcegabbana.com/">Бренд <b>Dsquared2</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.dolcegabbana.com/">Укороченные брюки с вышитым логитипом</a></p>
+            </div>
+            <div class="card">
+                <img src="img/acne.png" alt="Акне Студия"></a>
+                <p style="font-size: 22px;"><a href="https://www.prada.com/"><b>19 000 руб</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.prada.com/">Бренд <b>Acne Studios</b></a></p>
+                <p style="font-size: 18px;"><a href="https://www.prada.com/">Полосатый двубортный блейзер</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="padding-top: 130px; padding-left: 160px;"> © Вариант 1. Безрукавников Егор, группа АС-22-1</p>
+    </footer>
+</body>
+
+</html>
